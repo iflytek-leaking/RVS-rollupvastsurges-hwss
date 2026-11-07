@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="xposed_scope">
+        <!-- System framework (required for zygote-level hooks) -->
+        <item>android</item>
+        <!-- MDM main APK -->
+        <item>com.iflytek.k12aitstatistics</item>
+        <item>com.iflytek.ebg.aistudy.mdm</item>
+        <!-- HWC Service APK -->
+        <item>com.iflytek.hwc.service</item>
+        <item>com.iflytek.hwc</item>
+        <!-- SystemUI -->
+        <item>com.android.systemui</item>
+        <!-- TyeLauncher desktop -->
+        <item>com.toycloud.launcher</item>
+        <!-- ThemeCenter (theme management) -->
+        <item>com.iflytek.aistudy.themecenter</item>
+    </string-array>
+</resources>

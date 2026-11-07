@@ -1,0 +1,38 @@
+.gradle/
+build/
+*/build/
+*/*/build/
+.idea/
+*.iml
+local.properties
+.cxx/
+.native/
+.kotlin/
+.gradle-home/
+.android-home/
+log/
+*.log
+*.tmp
+*.lock
+local-sdk/
+.jadx-mcp-cache/
+*.apk
+
+# dex2c 第三方工具与依赖(体积大/可从上游重建, 不入库)
+tools/dex2c/repo/
+tools/dex2c/pylibs/
+tools/flattener/build/
+
+# 沙箱/CI 构建产物
+.gradle-user-home/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 真实签名密钥库不入库(仅本地 release 构建用; 缺失只影响防重打包校验)
+release.jks
+
+# 明文规则表: 只存在于 rules-raw 分支, 不进主分支
+tools/rulecheck/rules_decoded.txt
+tools/rulecheck/rules.yaml
